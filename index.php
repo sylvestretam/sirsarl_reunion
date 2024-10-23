@@ -1,15 +1,14 @@
 <?php
     session_start();
+    // var_dump($_SESSION);
     
     require_once('src/lib/outils.php');
     require_once('src/lib/database.php');
 
     require_once('src/controller/dashboard.php');
-    require_once('src/controller/entrant.php');
-    require_once('src/controller/sortant.php');
     require_once('src/controller/reunion.php');
 
-    if(isset($_SESSION['COURRIER']))
+    if(isset($_SESSION['REUNION']))
     {
 
         if(isset($_REQUEST['action'])){
@@ -18,14 +17,6 @@
 
                 case 'dashboard':
                     $controller = new DashboardController();
-                    $controller->show();
-                    break;
-                case 'entrant':
-                    $controller = new EntrantController();
-                    $controller->show();
-                    break;
-                case 'sortant':
-                    $controller = new SortantController();
                     $controller->show();
                     break;
                 case 'reunion':

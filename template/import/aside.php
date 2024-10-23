@@ -14,7 +14,7 @@
     <a href="" class="w-100">
       <img src="template\dist\img\logosisas.jpg" alt="Logo" class="brand-image elevation-3" style="width: 100%; opacity: .8">
     </a>
-    <span class="brand-text display-4"> C... & R... </span>
+    <span class="brand-text display-4"> REUNION </span>
   </div>
   <div class="divider"></div>
 
@@ -32,28 +32,10 @@
         </li>
 
         <li class="nav-item">
-          <a href="?action=entrant" class="nav-link btn_nav_link <?= active_nav_link("entrant") ?>">
+          <a href="?action=reunion" class="nav-link btn_nav_link <?= active_nav_link("reunion") ?> <?= ShowIFPermit("REUNION_ADD") ?>">
             <i class="nav-icon fas fa-circle"></i>
             <p>
-              COURRIER ENTRANT
-            </p>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="?action=sortant" class="nav-link btn_nav_link <?= active_nav_link("sortant") ?>">
-            <i class="nav-icon fas fa-circle"></i>
-            <p>
-              COURRIER SORTANT
-            </p>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="?action=reunion" class="nav-link btn_nav_link <?= active_nav_link("reunion") ?>">
-            <i class="nav-icon fas fa-circle"></i>
-            <p>
-              SALLE DE REUNION
+              REUNION
             </p>
           </a>
         </li>
